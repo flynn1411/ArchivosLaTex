@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper}
+\title{Tarea Unidad 1 MM-411}
+\author{Josué Ariel Izaguirre (20171034157)}
+\date{Febrero 2020}
+\begin{document}
+    \maketitle
+    \begin{flushleft}
+        \textbf{1.Resuelva las siguientes ecuaciones diferenciales:} \break
+        
+        
+        \hspace{10mm} a. $
+            \left( 1+x^2 \right) \frac{dy}{dx} = \left(1+y \right)^2
+            $  \break
+
+            \hspace{10mm} Resolución por variables separables \break
+                \[
+                    \left( 1+x^2 \right) \frac{dy}{dx} = \left(1+y \right)^2
+                \]
+
+                \[
+                   \left[ \left( 1+x^2 \right) \frac{dy}{dx} = \left(1+y \right)^2 \right] \frac{dx}{(1+x^2)(1+y)^2}
+                \]
+
+                \[
+                   \frac{dy}{(1+y)^2} = \frac{dx}{1+x^2}
+                \]
+
+                \[
+                   \int_{}^{} \frac{dy}{(1+y)^2} = \int_{}^{} \frac{dx}{1+x^2} 
+                \]
+
+                \[
+                    -\frac{1}{1+y} + c_1 = \tan ^ {-1} {x} + c_2
+                \]
+
+                \[
+                   \left[ -\frac{1}{1+y} = \tan ^ {-1} {x} + c_3 \right] (1+y)  ,\quad c_3 = c_2 - c_1
+                \]
+
+                \[
+                    -1 = \tan ^ {-1} {x} + c_3 + y\tan ^ {-1} {x} + c_{3}y
+                \]
+
+                \[
+                    -1 - \tan ^ {-1} {x} - c_3 = y \left( \tan ^ {-1} {x} + c_{3} \right)
+                \]
+
+        \hspace{10mm} b. $
+            \frac{dy}{dx} = 6e^{2x-y} , y(0) = 0
+            $  \break
+    \end{flushleft}
+
+\end{document}
