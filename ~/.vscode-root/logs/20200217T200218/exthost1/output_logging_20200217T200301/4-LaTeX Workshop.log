@@ -1,0 +1,59 @@
+[20:03:01] Initializing LaTeX Workshop.
+[20:03:01] Creating file watcher for .pdf files.
+[20:03:01] Creating LaTeX Workshop http and websocket server.
+[20:03:01] LaTeX Workshop initialized.
+[20:03:01] Found root file from active editor: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:03:01] Root file changed from: undefined to /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex. Find all dependencies.
+[20:03:01] Instantiating a new file watcher for /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:03:01] Creating file watcher for .bib files.
+[20:03:01] Parsing /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:03:02] Server created on 127.0.0.1:32917
+[20:03:02] Adding /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex to file watcher.
+[20:03:02] Snippet data loaded.
+[20:03:02] LaTeX Workshop version: 8.7.2
+[20:03:41] File watcher: responding to change in /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:03:41] Parsing /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:03:41] /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex changed. Auto build project.
+[20:03:41] BUILD command invoked.
+[20:03:41] Building root file: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:03:41] Build root file /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:03:41] Recipe step 1: latexmk, -synctex=1,-interaction=nonstopmode,-file-line-error,-pdf,-outdir=/home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1,/home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1
+[20:03:41] LaTeX build process spawned. PID: undefined.
+[20:03:41] LaTeX fatal error: spawn latexmk ENOENT, . PID: undefined.
+[20:03:41] Does the executable exist? PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+[20:04:06] Found root file from active editor: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex
+[20:04:06] Found root file from active editor: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex
+[20:04:06] Root file changed from: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex to /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex. Find all dependencies.
+[20:04:06] Root file changed -> cleaning up old file watcher.
+[20:04:06] Instantiating a new file watcher for /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex
+[20:04:06] Parsing /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex
+[20:04:06] Root file remains unchanged from: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex.
+[20:04:06] Adding /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex to file watcher.
+[20:04:08] Found root file from active editor: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:08] Root file changed from: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex to /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex. Find all dependencies.
+[20:04:08] Root file changed -> cleaning up old file watcher.
+[20:04:08] Instantiating a new file watcher for /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:08] Parsing /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:08] Adding /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex to file watcher.
+[20:04:10] Found root file from active editor: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex
+[20:04:10] Root file changed from: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex to /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex. Find all dependencies.
+[20:04:10] Root file changed -> cleaning up old file watcher.
+[20:04:10] Instantiating a new file watcher for /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex
+[20:04:10] Parsing /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex
+[20:04:10] Adding /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex to file watcher.
+[20:04:18] Found root file from active editor: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:18] Root file changed from: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/Metodos.tex to /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex. Find all dependencies.
+[20:04:18] Root file changed -> cleaning up old file watcher.
+[20:04:18] Instantiating a new file watcher for /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:18] Parsing /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:18] Adding /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex to file watcher.
+[20:04:24] File watcher: responding to change in /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:24] Parsing /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:24] /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex changed. Auto build project.
+[20:04:24] BUILD command invoked.
+[20:04:24] Building root file: /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:24] Build root file /home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1.tex
+[20:04:24] Recipe step 1: latexmk, -synctex=1,-interaction=nonstopmode,-file-line-error,-pdf,-outdir=/home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1,/home/frederick_zoller/Desktop/ArchivosLaTex/MM-411/Parcial1/JosueArielIzaguirreMejia_Tarea1
+[20:04:24] LaTeX build process spawned. PID: undefined.
+[20:04:24] LaTeX fatal error: spawn latexmk ENOENT, . PID: undefined.
+[20:04:24] Does the executable exist? PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin

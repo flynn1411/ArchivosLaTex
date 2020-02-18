@@ -1,0 +1,72 @@
+[2020-02-17 19:58:26.742] [exthost] [info] extension host started
+[2020-02-17 19:58:26.795] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-02-17 19:58:26.796] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-02-17 19:58:26.830] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-02-17 19:58:26.830] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2020-02-17 19:58:26.905] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2020-02-17 19:58:26.905] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/git/dist/main
+[2020-02-17 19:58:27.025] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-02-17 19:58:27.025] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2020-02-17 19:58:27.029] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-02-17 19:58:27.029] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-02-17 19:58:27.031] [exthost] [info] ExtensionService#_doActivateExtension vscode.vscode-account {"startup":true,"extensionId":{"value":"vscode.vscode-account","_lower":"vscode.vscode-account"},"activationEvent":"*"}
+[2020-02-17 19:58:27.031] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/vscode-account/dist/extension.js
+[2020-02-17 19:58:27.035] [exthost] [info] ExtensionService#_doActivateExtension be5invis.vscode-custom-css {"startup":true,"extensionId":{"value":"be5invis.vscode-custom-css","_lower":"be5invis.vscode-custom-css"},"activationEvent":"*"}
+[2020-02-17 19:58:27.035] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/be5invis.vscode-custom-css-3.0.9/src/extension
+[2020-02-17 19:58:27.598] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"extensionId":{"value":"dbaeumer.vscode-eslint","_lower":"dbaeumer.vscode-eslint"},"activationEvent":"*"}
+[2020-02-17 19:58:27.598] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/dbaeumer.vscode-eslint-2.0.15/client/out/extension
+[2020-02-17 19:58:27.615] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2020-02-17 19:58:27.615] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/eamodio.gitlens-10.2.0/dist/extension
+[2020-02-17 19:58:27.667] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2020-02-17 19:58:27.667] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/pkief.material-icon-theme-3.9.2/dist/extension
+[2020-02-17 19:58:27.678] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2020-02-17 19:58:27.678] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2020-02-17 19:58:28.015] [exthost] [info] eager extensions activated
+[2020-02-17 19:58:29.457] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"extensionId":{"value":"vscode.html-language-features","_lower":"vscode.html-language-features"},"activationEvent":"onLanguage:html"}
+[2020-02-17 19:58:29.457] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/html-language-features/client/dist/htmlMain
+[2020-02-17 19:58:50.243] [exthost] [info] extension host started
+[2020-02-17 19:58:50.316] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-02-17 19:58:50.316] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-02-17 19:58:50.321] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-02-17 19:58:50.321] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2020-02-17 19:58:50.355] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2020-02-17 19:58:50.355] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/git/dist/main
+[2020-02-17 19:58:50.425] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-02-17 19:58:50.425] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2020-02-17 19:58:50.440] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-02-17 19:58:50.440] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-02-17 19:58:50.441] [exthost] [info] ExtensionService#_doActivateExtension vscode.vscode-account {"startup":true,"extensionId":{"value":"vscode.vscode-account","_lower":"vscode.vscode-account"},"activationEvent":"*"}
+[2020-02-17 19:58:50.442] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/vscode-account/dist/extension.js
+[2020-02-17 19:58:50.457] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"extensionId":{"value":"dbaeumer.vscode-eslint","_lower":"dbaeumer.vscode-eslint"},"activationEvent":"*"}
+[2020-02-17 19:58:50.457] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/dbaeumer.vscode-eslint-2.0.15/client/out/extension
+[2020-02-17 19:58:50.479] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2020-02-17 19:58:50.480] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/eamodio.gitlens-10.2.0/dist/extension
+[2020-02-17 19:58:50.550] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2020-02-17 19:58:50.550] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/pkief.material-icon-theme-3.9.3/dist/extension
+[2020-02-17 19:58:50.565] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2020-02-17 19:58:50.565] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2020-02-17 19:58:54.781] [exthost] [info] eager extensions activated
+[2020-02-17 19:59:10.153] [exthost] [info] extension host started
+[2020-02-17 19:59:10.166] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2020-02-17 19:59:10.166] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/debug-auto-launch/dist/extension
+[2020-02-17 19:59:10.168] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"*"}
+[2020-02-17 19:59:10.169] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/emmet/dist/extension
+[2020-02-17 19:59:10.183] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.git","_lower":"vscode.git"},"activationEvent":"*"}
+[2020-02-17 19:59:10.183] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/git/dist/main
+[2020-02-17 19:59:10.204] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"*"}
+[2020-02-17 19:59:10.204] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/merge-conflict/dist/extension
+[2020-02-17 19:59:10.207] [exthost] [info] ExtensionService#_doActivateExtension vscode.search-result {"startup":true,"extensionId":{"value":"vscode.search-result","_lower":"vscode.search-result"},"activationEvent":"*"}
+[2020-02-17 19:59:10.207] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/search-result/dist/extension.js
+[2020-02-17 19:59:10.209] [exthost] [info] ExtensionService#_doActivateExtension vscode.vscode-account {"startup":true,"extensionId":{"value":"vscode.vscode-account","_lower":"vscode.vscode-account"},"activationEvent":"*"}
+[2020-02-17 19:59:10.209] [exthost] [info] ExtensionService#loadCommonJSModule file:///snap/code/24/usr/share/code/resources/app/extensions/vscode-account/dist/extension.js
+[2020-02-17 19:59:10.211] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint {"startup":true,"extensionId":{"value":"dbaeumer.vscode-eslint","_lower":"dbaeumer.vscode-eslint"},"activationEvent":"*"}
+[2020-02-17 19:59:10.211] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/dbaeumer.vscode-eslint-2.0.15/client/out/extension
+[2020-02-17 19:59:10.217] [exthost] [info] ExtensionService#_doActivateExtension eamodio.gitlens {"startup":true,"extensionId":{"value":"eamodio.gitlens","_lower":"eamodio.gitlens"},"activationEvent":"*"}
+[2020-02-17 19:59:10.217] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/eamodio.gitlens-10.2.0/dist/extension
+[2020-02-17 19:59:10.252] [exthost] [info] ExtensionService#_doActivateExtension PKief.material-icon-theme {"startup":true,"extensionId":{"value":"PKief.material-icon-theme","_lower":"pkief.material-icon-theme"},"activationEvent":"*"}
+[2020-02-17 19:59:10.252] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/pkief.material-icon-theme-3.9.3/dist/extension
+[2020-02-17 19:59:10.258] [exthost] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"extensionId":{"value":"ritwickdey.LiveServer","_lower":"ritwickdey.liveserver"},"activationEvent":"*"}
+[2020-02-17 19:59:10.258] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/ritwickdey.liveserver-5.6.1/out/src/extension
+[2020-02-17 19:59:10.552] [exthost] [info] ExtensionService#_doActivateExtension RobbOwen.synthwave-vscode {"startup":true,"extensionId":{"value":"RobbOwen.synthwave-vscode","_lower":"robbowen.synthwave-vscode"},"activationEvent":"*"}
+[2020-02-17 19:59:10.552] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/frederick_zoller/.vscode/extensions/robbowen.synthwave-vscode-0.1.1/src/extension.js
+[2020-02-17 19:59:10.559] [exthost] [info] eager extensions activated

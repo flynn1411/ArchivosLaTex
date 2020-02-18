@@ -1,0 +1,44 @@
+[2020-02-17 19:58:24.003] [sharedprocess] [info] main {"machineId":"9fc457bc4d0486647959ecc23845844919e0bfffe397e1f8e0aac93fdcbc6fb5","windowId":2}
+[2020-02-17 19:58:31.101] [sharedprocess] [info] Installing extension: eamodio.gitlens
+[2020-02-17 19:58:31.102] [sharedprocess] [info] Installing extension: endormi.2077-theme
+[2020-02-17 19:58:31.102] [sharedprocess] [info] Installing extension: james-yu.latex-workshop
+[2020-02-17 19:58:31.102] [sharedprocess] [info] Installing extension: ms-python.python
+[2020-02-17 19:58:31.102] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2020-02-17 19:58:31.103] [sharedprocess] [info] Installing extension: redhat.java
+[2020-02-17 19:58:31.103] [sharedprocess] [info] Installing extension: robbowen.synthwave-vscode
+[2020-02-17 19:58:32.973] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /tmp/dc0d03c4-eca1-4b5f-aa2b-587d645502cc
+[2020-02-17 19:58:34.105] [sharedprocess] [info] Extracted extension to /home/frederick_zoller/.vscode/extensions/.pkief.material-icon-theme-3.9.3: pkief.material-icon-theme
+[2020-02-17 19:58:34.106] [sharedprocess] [info] Renamed to /home/frederick_zoller/.vscode/extensions/pkief.material-icon-theme-3.9.3
+[2020-02-17 19:58:34.108] [sharedprocess] [info] Installation completed. pkief.material-icon-theme
+[2020-02-17 19:58:34.219] [sharedprocess] [info] Extensions installed successfully: pkief.material-icon-theme
+[2020-02-17 19:58:47.167] [sharedprocess] [info] Downloaded extension: endormi.2077-theme /tmp/49c9c986-0012-44cf-9aef-c90abc7822b0
+[2020-02-17 19:58:47.293] [sharedprocess] [info] Extracted extension to /home/frederick_zoller/.vscode/extensions/.endormi.2077-theme-1.4.3: endormi.2077-theme
+[2020-02-17 19:58:47.293] [sharedprocess] [info] Renamed to /home/frederick_zoller/.vscode/extensions/endormi.2077-theme-1.4.3
+[2020-02-17 19:58:47.295] [sharedprocess] [info] Installation completed. endormi.2077-theme
+[2020-02-17 19:58:47.485] [sharedprocess] [info] Extensions installed successfully: endormi.2077-theme
+[2020-02-17 19:59:03.193] [sharedprocess] [info] Downloaded extension: robbowen.synthwave-vscode /tmp/06f663f3-c2e1-4cb4-abd2-39bffba2a7c1
+[2020-02-17 19:59:03.301] [sharedprocess] [info] Extracted extension to /home/frederick_zoller/.vscode/extensions/.robbowen.synthwave-vscode-0.1.1: robbowen.synthwave-vscode
+[2020-02-17 19:59:03.301] [sharedprocess] [info] Renamed to /home/frederick_zoller/.vscode/extensions/robbowen.synthwave-vscode-0.1.1
+[2020-02-17 19:59:03.302] [sharedprocess] [info] Installation completed. robbowen.synthwave-vscode
+[2020-02-17 19:59:03.366] [sharedprocess] [info] Extensions installed successfully: robbowen.synthwave-vscode
+[2020-02-17 19:59:03.994] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-02-17 19:59:10.447] [sharedprocess] [info] Downloaded extension: eamodio.gitlens /tmp/fa07f08e-e958-4fb6-95f0-fd2443172122
+[2020-02-17 19:59:10.645] [sharedprocess] [info] Downloaded extension: ms-python.python /tmp/53a2ab52-9e64-41c5-a8bc-c352d77480de
+[2020-02-17 19:59:11.357] [sharedprocess] [info] Extracted extension to /home/frederick_zoller/.vscode/extensions/.eamodio.gitlens-10.2.1: eamodio.gitlens
+[2020-02-17 19:59:11.357] [sharedprocess] [info] Renamed to /home/frederick_zoller/.vscode/extensions/eamodio.gitlens-10.2.1
+[2020-02-17 19:59:11.366] [sharedprocess] [info] Installation completed. eamodio.gitlens
+[2020-02-17 19:59:11.444] [sharedprocess] [info] Extensions installed successfully: eamodio.gitlens
+[2020-02-17 19:59:14.288] [sharedprocess] [info] Extracted extension to /home/frederick_zoller/.vscode/extensions/.ms-python.python-2020.2.63072: ms-python.python
+[2020-02-17 19:59:14.288] [sharedprocess] [info] Renamed to /home/frederick_zoller/.vscode/extensions/ms-python.python-2020.2.63072
+[2020-02-17 19:59:14.295] [sharedprocess] [info] Installation completed. ms-python.python
+[2020-02-17 19:59:14.398] [sharedprocess] [info] Extensions installed successfully: ms-python.python
+[2020-02-17 19:59:20.544] [sharedprocess] [info] Downloaded extension: james-yu.latex-workshop /tmp/f299e1a2-fc3d-4887-8434-695f857d3579
+[2020-02-17 19:59:25.906] [sharedprocess] [info] Extracted extension to /home/frederick_zoller/.vscode/extensions/.james-yu.latex-workshop-8.7.2: james-yu.latex-workshop
+[2020-02-17 19:59:25.906] [sharedprocess] [info] Renamed to /home/frederick_zoller/.vscode/extensions/james-yu.latex-workshop-8.7.2
+[2020-02-17 19:59:25.910] [sharedprocess] [info] Installation completed. james-yu.latex-workshop
+[2020-02-17 19:59:26.069] [sharedprocess] [info] Extensions installed successfully: james-yu.latex-workshop
+[2020-02-17 19:59:48.986] [sharedprocess] [info] Downloaded extension: redhat.java /tmp/aa6be402-38b7-485f-a65f-6ae08e764a2c
+[2020-02-17 19:59:50.156] [sharedprocess] [info] Extracted extension to /home/frederick_zoller/.vscode/extensions/.redhat.java-0.56.0: redhat.java
+[2020-02-17 19:59:50.156] [sharedprocess] [info] Renamed to /home/frederick_zoller/.vscode/extensions/redhat.java-0.56.0
+[2020-02-17 19:59:50.157] [sharedprocess] [info] Installation completed. redhat.java
+[2020-02-17 19:59:50.256] [sharedprocess] [info] Extensions installed successfully: redhat.java

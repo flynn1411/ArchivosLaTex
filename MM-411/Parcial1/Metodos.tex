@@ -25,31 +25,31 @@
     \end{align*}
     
     \item \textbf{Ecuación Diferencial Exacta} \\
-    De la forma $\boldsymbol{M(x,y)dx + N(x,y) = 0}$, donde 
+    De la forma $\boldsymbol{M(x,y)dx + N(x,y)dy = 0}$, donde 
     \textbf{$\boldsymbol{\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}}$} \\
     Resolución \\
     -Usando M(x,y)
     \begin{align*}
         F(x,y) & = \int M(x,y) dx + g(y) &&\text{(1)}\\
-        \frac{\partial F}{\partial y}[F(x,y)] & = N_y &&\text{(1.1)}\\
-        \frac{\partial F}{\partial y} & = M_y + g'(y) = N_y &&\text{(1.2)}\\
-        g'(y) & = N_y - M_y &&\text{(1.3)}\\
-        \int g'(y) dy & = \int N_y - M_y dy &&\text{(1.4)}\\
-        g(y) & = \int N_y - M_y dy &&\text{(1.3)}\\
-        F(x,y) & = \int M(x,y) dx + \int N_y - M_y dy &&\text{(2)}\\
-        \Aboxed{ \int M(x,y) dx + \int N_y - M_y dy & = c } &&\text{(3)}
+        \frac{\partial F}{\partial y}[F(x,y)] & = N(x,y) &&\text{(1.1)}\\
+        \frac{\partial F}{\partial y} & = M_y + g'(y) = N(x,y) &&\text{(1.2)}\\
+        g'(y) & = N(x,y) - M_y &&\text{(1.3)}\\
+        \int g'(y) dy & = \int (N(x,y) - M_y) dy &&\text{(1.4)}\\
+        g(y) & = \int (N(x,y) - M_y) dy &&\text{(1.3)}\\
+        F(x,y) & = \int M(x,y) dx + \int (N(x,y) - M_y) dy &&\text{(2)}\\
+        \Aboxed{ \int M(x,y) dx + \int (N(x,y) - M_y) dy & = c } &&\text{(3)}
     \end{align*}
 
     -Usando N(x,y)
     \begin{align*}
         F(x,y) & = \int N(x,y) dy + h(x) &&\text{(1)}\\
-        \frac{\partial F}{\partial x}[F(x,y)] & = N_y &&\text{(1.1)}\\
-        \frac{\partial F}{\partial x} & = M_y + h'(x) = M_x &&\text{(1.2)}\\
-        h'(x) & = M_x - N_x &&\text{(1.3)}\\
-        \int h'(x) dx & = \int M_x - N_x dx &&\text{(1.4)}\\
-        h(x) & = \int M_x - N_x dx &&\text{(1.3)}\\
-        F(x,y) & = \int M(x,y) dx + \int M_x - N_x dx &&\text{(2)}\\
-        \Aboxed{ \int M(x,y) dy + \int M_x - N_x dx & = c } &&\text{(3)}
+        \frac{\partial F}{\partial x}[F(x,y)] & = M(x,y) &&\text{(1.1)}\\
+        \frac{\partial F}{\partial x} & = N_x + h'(x) = M(x,y) &&\text{(1.2)}\\
+        h'(x) & = M(x,y) - N_x &&\text{(1.3)}\\
+        \int h'(x) dx & = \int (M(x,y) - N_x) dx &&\text{(1.4)}\\
+        h(x) & = \int (M(x,y) - N_x) dx &&\text{(1.3)}\\
+        F(x,y) & = \int N(x,y) dy + \int (M(x,y) - N_x) dx &&\text{(2)}\\
+        \Aboxed{ \int N(x,y) dy + \int (M(x,y) - N_x) dx & = c } &&\text{(3)}
     \end{align*}
 
     \item \textbf{Ecuación Diferencial No Exacta}\\
@@ -66,7 +66,7 @@
     \end{align*}
     \\-Caso $\mu(y)$ \\
     \begin{align*}
-        \mu(x) & = e^{\int \frac{N_x - M_y}{M} dy} \\
+        \mu(y) & = e^{\int \frac{N_x - M_y}{M} dy} \\
         [ M(x,y)dx + N(x,y)dy & = 0 ] (\mu(y)) \\
         \Aboxed{M(x,y)\mu(y)dx + N(x,y)\mu(y)dy & = 0}
     \end{align*}
@@ -131,7 +131,22 @@
 
     \item \textbf{Ecuación Diferencial con Coeficientes Lineales} \\
     De la forma $\boldsymbol{ (ax + by + c)dx + (\alpha x + \beta y + \gamma )dy = 0 }$ ó tambien 
-    $\boldsymbol{ \frac{dy}{dx} = \frac{ax + by + c}{\alpha x + \beta y + \gamma } }$.
+    $\boldsymbol{ \frac{dy}{dx} = \frac{ax + by + c}{\alpha x + \beta y + \gamma } }$. \\
+    Resolución \\
+    \\ Resolver el sistema de ecuaciones: \\
+    $ \begin{cases}
+        ax + by + c \\ 
+        \alpha x + \beta y + \gamma  
+       \end{cases} 
+    $ \\
+    Con la solución $ (h,k) $. Con la solución se procede a realizar la sustitución: \\
+    \begin{align*}
+        x & = u + h && y  = v + k \\
+        dx & = du && dy  = dv
+    \end{align*}\\
+    La sustitución anterior dejará la ecuación en una forma $\boldsymbol{ (au + bv)du + (\alpha u + \beta v)dv = 0 }$ ó tambien 
+    $\boldsymbol{ \frac{dv}{du} = \frac{au + bv }{\alpha u + \beta v} }$ la cual se puede resolver utilizando métodos anteriormente vistos
+    (principalmente homogéneas, exactas y/o no exactas).
 \end{itemize}
 
 \end{document}
