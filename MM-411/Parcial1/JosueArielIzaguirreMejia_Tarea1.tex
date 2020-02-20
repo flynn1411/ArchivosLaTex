@@ -8,6 +8,15 @@
 \newcommand{\finalAnswer}[2]{ \Aboxed{ #1 & = #2 } }
 \newcommand{\p}[1]{ \left( #1 \right) }
 \newcommand{\brackets}[1]{ \left[ #1 \right] }
+\newcommand{\newProblem}[2]{ \hspace{10mm} #1. $
+\boldsymbol{ #2 }
+$  \break }
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\homogenea}{
+    u & = \frac{y}{x} \\
+    y & = ux \\
+    dy & = udx + xdu\\
+}
 \allowdisplaybreaks
 %\usepackage{showframe}
 \geometry{letterpaper}
@@ -131,7 +140,98 @@
                 \newLine{ x } { c \p{ \frac{y + \sqrt{4x^2 + y^2} }{x} } } { 16 }
                 \finalAnswer{ \frac{ x^2 }{ y + \sqrt{4x^2 + y^2} } }{c}
             \end{align*}
-            
+
+        \newProblem{f}{ x^2 y' = xy + x^2 e^{\frac{y}{x}} }
+            \begin{align*}
+                \newLine{ [ x^2 y' } { xy + x^2 e^{ \frac{y}{x} } ] \p{ \frac{1}{x^2} } } { 1 }
+                \newLine{ \frac{dy}{dx} } { \frac{y}{x} + e^{ \frac{y}{x} } } { 2 }
+                \newLine{ dy } { ( \frac{y}{x} + \e{\frac{y}{x}})dx } { 3 }
+                \\
+                \homogenea
+                \\
+                \newLine{ udx + xdu } { ( u + \e{u} )dx } { 4 }
+                \newLine{ udx - ( u + \e{u} )dx } { xdu } { 5 }
+                \newLine{ \e{u} dx } { xdu } { 6 }
+                \newLine{ \int \frac{dx}{x} } { \int \e{-u} } { 7 }
+                \newLine{ ln(x) } { -\e{-u} + c } { 8 }
+                \newLine{ ln(x) } { -\e{-\frac{y}{x}} + c} { 9 }
+                \finalAnswer{ ln(x) + \e{-\frac{y}{x}} } { c }
+            \end{align*}
+
+        \newProblem{ g }{ y' = \sqrt{y' = x + y +1 } }
+            \begin{align*}
+                \newLine{ dy } { \sqrt{ x + y + 1 }dx } { 1 }
+                \\
+                \newLine{ w } { x+y+1 } { 2.1 }
+                \newLine{ dw } { dy } { 2.2 }
+                \\
+                \newLine{ dw } { \sqrt{w}dx } { 3 }
+                \newLine{ \int \frac{dw}{\sqrt{w}} } {\int dx } { 4 }
+                \newLine{ \frac{1}{2} \sqrt{w} } { x + c } { 5 }
+                \newLine{ \frac{1}{2} \sqrt{x+y+1} } { x + c } { 6 }
+                \newLine{ x + y+ 1 } { (x + c) ^ 2 } { 7 }
+                \finalAnswer{ y }{ (x + c)^2 - x - 1}
+            \end{align*}
+
+        \newProblem{ h } { y' = y + y^3 }
+            \begin{align*}
+                \newLine{ y' - y } { y^3 } { 1 }
+                \\
+                \newLine{ u }{ y^{ 1 - 3 } }{ 2.1 }
+                \newLine{ y } { u^{-\frac{1}{2}} } { 2.2 }
+                \newLine{ y' } { -\frac{1}{2} u^{-\frac{3}{2}} u' } { 2.3 }
+                \\
+                \newLine{ -\frac{1}{2} u^{-\frac{3}{2}} u' - u^{-\frac{1}{2}} } { u^{-\frac{3}{2}} } { 3 }
+                \newLine{ u' + 2u } { -1 } { 4 }
+                \\
+                \newLine{ \mu(x) } { \e{ \int 2 dx} } { 5.1 }
+                \newLine{ \mu(x) } { \e{ 2x } } { 5.2 }
+                \\
+                \newLine{ [ u' +2u } { -1 ] \e{2x} } { 6 }
+                \newLine{ u'\e{ 2x } + 2u\e{ 2x } } { -\e{2x} } { 7 }
+                \newLine{ \frac{d}{dx} [ u\e{2x} ] } { -\e{2x} } { 8 }
+                \newLine{ u\e{2x} } { \int -\e{2x} dx } { 9 }
+                \newLine{ u\e{2x} } { -\frac{1}{2} \e{2x} + c } { 10 }
+                \newLine{ u } { c\e{-2x} -\frac{1}{2} } { 11 }
+                \newLine{ \frac{y}{x} } { c\e{-2x} -\frac{1}{2} } { 12 }
+                \finalAnswer{ y } { \frac{ c }{ \e{2x}x } - \frac{ 1 }{ 2x }}
+            \end{align*}
+
+        \newProblem{ i }{ xy' + 6y = 3xy^{\frac{4}{3}} }
+            \begin{align*}
+                \newLine{ y' + 6\frac{y}{x} } { 3y^{ \frac{4}{3} } } { 1 }
+                \\
+                \newLine{ u } { y^{-\frac{1}{3}} } { 2.1 }
+                \newLine{ y } { u^{ -3 } } { 2.2 }
+                \newLine{ y' } { -3u^{-4} u' } { 2.3 }
+                \\
+                \newLine{ -3u^{-4}u' +6u^{-3}x^{-1} } { 3u^{-4} } { 3 }
+                \newLine{ u' + 2ux^{-1} } { -1 } { 4 }
+                \\
+                \newLine{ \mu(x) } { \e{ 2\int \frac{dx}{x} }  } { 5.1 }
+                \newLine{ \mu(x) } { 2\e{ln(x)} } { 5.2 }
+                \newLine{ \mu(x) } { x^2 } { 5.3 }
+                \\
+                \newLine{ u'x^2 + 2xu } { -x^2 } { 6 }
+                \newLine{ \frac{d}{dx}[ ux^2 ] }{ -x^2 }{7}
+                \newLine{ ux^2 } { \int -x^2 dx } { 8 }
+                \newLine{ ux^2 } { -\frac{1}{3}x^3 + c } { 9 }
+                \newLine{ yx } { -\frac{1}{3}x^3 + c} { 10 }
+                \finalAnswer{ y } { -\frac{1}{3}x^2 + \frac{c}{x} }
+            \end{align*}
+        
+        \newProblem{j}{ \frac{dy}{dx} = \frac{2y-x+7}{4x-y-18} }
+            \begin{align*}
+                \newLine{ ( 4x-y-18 )dy } { (2y-x+7)dx } { 1 }
+                \newLine{  } {  } { 2 }
+            \end{align*}
+
+        \newProblem{k}{ \frac{dy}{dx} = \frac{ x-y-1 }{ x+y+3 } }
+
+        \newProblem{l}{ ( \e{x}seny + tany )dx + ( \e{x}cosy + xsec^{2}y )dy = 0 }
+         \begin{align*}
+             \newLine{  } {  } { 1 }
+         \end{align*}
     \end{flushleft}
 
 \end{document}
