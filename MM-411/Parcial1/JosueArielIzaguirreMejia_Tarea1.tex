@@ -4,6 +4,11 @@
 \usepackage[margin=1in, headsep=0pt]{geometry}
 \usepackage{amsmath}
 \usepackage{mathtools}
+\newcommand{\newLine}[3]{ #1 & = #2 && \text{(#3)}\\ }
+\newcommand{\finalAnswer}[2]{ \Aboxed{ #1 & = #2 } }
+\newcommand{\p}[1]{ \left( #1 \right) }
+\newcommand{\brackets}[1]{ \left[ #1 \right] }
+\allowdisplaybreaks
 %\usepackage{showframe}
 \geometry{letterpaper}
 \title{Tarea Unidad 1 MM-411}
@@ -18,8 +23,6 @@
         \hspace{10mm} a. $
             \boldsymbol{\left( 1+x^2 \right) \frac{dy}{dx} = \left(1+y \right)^2}
             $  \break
-
-            \hspace{10mm} Resolución por variables separables \break
 
                 \begin{align*}
                     ( 1+x^2 ) \frac{dy}{dx} & = (1+y )^2  &&\text{(1)}\\
@@ -65,6 +68,70 @@
                 ln(y) & = 3x - ln(x) + c  && \text{(7)}\\
                 \Aboxed{y & = \frac{e^{3x + c}}{x}}\\
             \end{align*}
+
+        \hspace{10mm} d. $
+            \boldsymbol{ (1+x)y' + y = cosx , y(0) = 1}
+            $  \break
+
+            \begin{align*}
+                [ (1+x)y' + y & = cosx ] (\frac{1}{1+x}) && \text{(1)}\\
+                y' + \frac{y}{1+x} & = \frac{cosx}{1+x} && \text{(2)}\\
+                \\
+                \mu(x) & = e^{\int \frac{1}{1+x} dx} && \text{(3.1)}\\
+                \mu(x) & = e^{ln(1+x)} && \text{(3.2)}\\
+                \mu(x) & = 1+x && \text{(3.3)}\\
+                \\
+                [ y' + \frac{y}{1+x} & = \frac{cosx}{1+x} ] (1+x) && \text{(4)}\\
+                (1+x)y' + y & = cosx && \text{(5)}\\
+                \int \frac{d}{dx} [ (1+x)y ] & = \int cosx dx && \text{(6)}\\
+                \newLine{(1+x)y}{senx + c}{7}
+                \newLine{y}{\frac{senx + c}{1+x}}{8}
+                \\
+                \newLine{y(0)}{1}{9.1}
+                \newLine{1}{ \frac{sen(0) + c}{1+(0)} }{9.2}
+                \newLine{1}{ \frac{c}{1} }{9.3}
+                \newLine{c}{1}{9.4}
+                \\
+                \finalAnswer{y}{\frac{senx + 1}{1+x}}
+            \end{align*}
+
+        \hspace{10mm} e. $
+            \boldsymbol{ xyy' = y^2 + x\sqrt{4x^2 + y^2} }
+            $  \break
+
+            \begin{align*}
+                \newLine{[ xy\frac{dy}{dx}} {y^2 x\sqrt{ 4x^2 + y^2} ] (dx) } {1}
+                \newLine{xydy} {(y^2 x\sqrt{ 4x^2 + y^2})dx} {2}
+                \newLine{xydy - (y^2 x\sqrt{ 4x^2 + y^2})dx } {0} {3}
+                \\
+                \newLine{u}{\frac{y}{x}}{4.1}
+                \newLine{y}{ux}{4.2}
+                \newLine{dy}{udx+xdu}{4.3}
+                \\
+                \newLine{ux^2 (udx + xdu) - (u^2 x^2 + x \sqrt{4x^2 + u^2 x^2})dx}{0}{5}
+                \newLine{ x^2(u^2)dx + x^2(-u^2 - \sqrt{4-u^2})dx + x^3du }{0}{6}
+                \newLine{ x^2(-\sqrt{4-u^2})dx }{-x^3du}{7}
+                \newLine{ x^2(-\sqrt{4-u^2})dx }{-x^3du ] (\frac{1}{(-x^3)(-\sqrt{4-u^2})})}{8}
+                \newLine{ \frac{dx}{x} }{ \frac{du}{ \sqrt{4-u^2}} }{9}
+                \newLine{\int \frac{dx}{x} }{ \int \frac{du}{ \sqrt{4-u^2}} }{10}
+                \newLine{ Ln(x) }{ \int \frac{du}{ \sqrt{4-u^2}} }{11.1}
+                \\
+                \newLine{2tan\theta = u}{ tan\theta = \frac{u}{2} }{11.1.a}
+                \newLine{\sqrt{ 4tan^{2}\theta +4 }}{2sec\theta}{11.1.b}
+                \newLine{2sec^{2}\theta d\theta}{du}{11.1.c}
+                \newLine{ \int \frac{du}{sqrt{4-u^2}} } { \int \frac{ 2sec^{2}\theta }{ 2sec\theta } } {11.1.d}
+                \newLine{ \int \frac{ 2sec^{2}\theta }{ 2sec\theta } } { \int sec\theta d\theta } {11.1.e}
+                \newLine{ \int sec\theta d\theta } { ln(tan\theta + sec\theta) + c_1 } {11.1.f}
+                \newLine{ \int sec\theta d\theta } { ln( \frac{u}{2} + \frac{ \sqrt{4-u^2} }{2} ) + c_1 } {11.1.g}
+                \\
+                \newLine{ Ln(x) } { ln( \frac{u + \sqrt{4-u^2} }{2} ) + c_1 } { 12 }
+                \newLine{ x } { c \left( u + \sqrt{4-u^2}  \right), c=\frac{e^{c_1}}{2} } { 13 }
+                \newLine{ x } { c \left( (\frac{y}{x}) + \sqrt{4-\frac{y^2}{x^2}} \right)  } { 14 }
+                \newLine{ x } { c \p{ \frac{y}{x} + \frac{ \sqrt{4x^2 + y^2} }{x} } } { 15 }
+                \newLine{ x } { c \p{ \frac{y + \sqrt{4x^2 + y^2} }{x} } } { 16 }
+                \finalAnswer{ \frac{ x^2 }{ y + \sqrt{4x^2 + y^2} } }{c}
+            \end{align*}
+            
     \end{flushleft}
 
 \end{document}
