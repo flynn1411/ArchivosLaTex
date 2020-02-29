@@ -17,6 +17,8 @@ $  \break }
     y & = ux \\
     dy & = udx + xdu\\
 }
+\newcommand{\notEqual}[3]{ #1 & \neq #2 && \text{(#3)}\\ }
+\newcommand{\pD}[2]{ \frac{\partial #1}{\partial #2} }
 \allowdisplaybreaks
 %\usepackage{showframe}
 \geometry{letterpaper}
@@ -223,15 +225,217 @@ $  \break }
         \newProblem{j}{ \frac{dy}{dx} = \frac{2y-x+7}{4x-y-18} }
             \begin{align*}
                 \newLine{ ( 4x-y-18 )dy } { (2y-x+7)dx } { 1 }
-                \newLine{  } {  } { 2 }
+                \\
+                    \begin{cases}
+                        4x - y = 18\\
+                        2y - x = -7
+                    \end{cases}\\
+                x = 3 && y = -2 \\
+                x = u + 3 && y = v -2 \\
+                dx = du && dy = dv\\
+                \\
+                \newLine{ ( 4u - 3v )dv } { (2v-u)du } {2}
+                \newLine{ (2v-u)du - ( 4u - 3v )dv } { 0 } { 3 }
+                \\
+                \newLine{ w } { \frac{v}{u} } { 4.1 }
+                \newLine{ v } { wu } { 4.2 }
+                \newLine{ dv } { wdu + udw } { 4.3 }
+                \\
+                \newLine{ (2wu-u)du -(4u-3wu)(wdu+udw) } { 0 } {5}
+                \newLine{ u(3w^2 -2w-1)du } { u^2(4-3w)dw } { 6 }
+                \newLine{ \int \frac{du}{u} } { \int \frac{4-3w}{3w^2-2w-1} dw } { 7 }
+                \\
+                    \newLine{ \int \frac{4-3w}{3w^2-2w-1} dw  } { \frac{1}{4}\int \frac{1}{w-1}dw - \frac{15}{4}\int \frac{1}{3w+1} dw } { 8.1 }
+                    \newLine{ \int \frac{4-3w}{3w^2-2w-1} dw } { \frac{1}{4}ln(w-1) - \frac{3}{4}ln(3w+1) } { 8.2 }
+                \\
+                \newLine{ ln(u) } { \frac{1}{4}ln(w-1) - \frac{3}{4}ln(3w+1) + c} { 9 }
+                \newLine{ u } { C\p{w-1}^{\frac{1}{4}} \p{3w+1}^{-\frac{3}{4}} } { 10 }
+                \newLine{ x-3 } { C \p{\frac{y+2}{x-3}-1}^{\frac{1}{4}} \p{3\p{\frac{y+2}{x-3}}+1}^{-\frac{3}{4}} } { 11 }
+                \finalAnswer{ \p{x-3} \p{\frac{y+2}{x-3}-1}^{-\frac{1}{4}} \p{3\p{\frac{y+2}{x-3}}+1}^{\frac{3}{4}} }{ C }
             \end{align*}
 
         \newProblem{k}{ \frac{dy}{dx} = \frac{ x-y-1 }{ x+y+3 } }
+        \begin{align*}
+            \newLine{ ( x+y+3 )dy } { (x-y-1)dx } { 1 }
+            \\
+                \begin{cases}
+                    x+y = -3\\
+                    x-y = 1
+                \end{cases}\\
+            x = -1 && y = -2 \\
+            x = u - 1 && y = v -2 \\
+            dx = du && dy = dv\\
+            \\
+            \newLine{ (v+u)dv } { (u-v)du } {2}
+            \newLine{ (u-v)du - ( v+u )dv } { 0 } { 3 }
+            \\
+            \newLine{ w } { \frac{v}{u} } { 4.1 }
+            \newLine{ v } { wu } { 4.2 }
+            \newLine{ dv } { wdu + udw } { 4.3 }
+            \\
+            \newLine{ (wu-u)du - (wu+u)(wdu+udw) } { 0 } {5}
+            \newLine{ u(1-2w-w^2)du } { u^2(w+1)dw } { 6 }
+            \newLine{ \int \frac{du}{u} } { \int \frac{w+1}{1-2w-w^2} dw } { 7 }
+            \\
+                \\
+                \newLine{t}{1-2w-w^2}{8.1}
+                \newLine{dt}{-2(1+w)dw}{8.2}
+                \newLine{\frac{dt}{-2(1+w)}}{dw}{8.3}
+                \\
+                \newLine{ \int \frac{w+1}{1-2w-w^2} dw } { -\frac{1}{2} \int \frac{1}{t} dt } { 8.4 }
+                \newLine{ -\frac{1}{2} \int \frac{1}{t} dt }{ -\frac{1}{2} ln(t) + c}{ 8.5 }
+                \newLine{ \int \frac{w+1}{1-2w-w^2} dw } { -\frac{1}{2} ln(1-2w-w^2) + c } { 8.6 }
+            \\
+            \newLine{ ln(u) } { -\frac{1}{2} ln(1-2w-w^2) + c} { 9 }
+            \newLine{ u } { C\p{1-2w-w^2}^{-\frac{1}{2}} } { 10 }
+            \newLine{ x+1 } { C\p{1-2\p{\frac{y+2}{x+1}}-\p{\frac{y+2}{x+1}}}^{-\frac{1}{2}} } { 11 }
+            \finalAnswer{ \p{x+1} \p{1-2\p{\frac{y+2}{x+1}}-\p{\frac{y+2}{x+1}}}^{\frac{1}{2}} }{ C }
+        \end{align*}
 
         \newProblem{l}{ ( \e{x}seny + tany )dx + ( \e{x}cosy + xsec^{2}y )dy = 0 }
          \begin{align*}
-             \newLine{  } {  } { 1 }
+             \newLine{ \frac{\partial M}{\partial y} = \e{x}cosy + sec^{2}y } { \frac{\partial N}{\partial x} = \e{x}cosy + sec^{2}y } { 1 }
+             \\
+             \newLine{F(x,y)}{\int \p{\e{x}seny + tany} dx + g(y)}{2.1}
+             \newLine{F(x,y)}{ \e{x}seny + xtany + g(y) }{ 2.2 }
+             \\
+             \newLine{ \frac{\partial F}{\partial y} } { N(x,y) } { 3.1 }
+             \newLine{ \e{x}cosy + xsec^{2}y + g'(y) } { \e{x}cosy + xsec^{2}y } { 3.2 }
+             \newLine{ g'(y) } { 0 } { 3.3 }
+             \newLine{ g(y) } { \int 0 dy } { 3.4 }
+             \newLine{ g(y) } { C } { 3.5 }
+             \\
+             \newLine{ F(x,y) }{ \e{x}seny + xtany + C }{ 4 }
+             \finalAnswer{ \e{x}seny + xtany }{ C }
          \end{align*}
+
+         \newProblem{m}{ \p{x + tan^{-1}y}dx + \p{ \frac{x+y}{1+y^2} }dy = 0 }
+            \begin{align*}
+                \newLine{ \pD{M}{y} = \frac{1}{1+y^2} } { \pD{N}{x} = \frac{1}{1+y^2} } { 1 }
+                \\
+                    \newLine{ F(x,y) } { \int \p{x + tan^{-1}y}dx + g(y) } { 2.1 }
+                    \newLine{ F(x,y) } { \frac{1}{2}x^2 + xtan^{-1}y + g(y) } { 2.2 }
+                \\
+                    \newLine{ \pD{F}{y} } { N(x,y) } { 3.1 }
+                    \newLine{ \frac{x}{1+y^2} + g'(y) } { \frac{x}{1+y^2} + \frac{y}{1+y^2} } { 3.2 }
+                    \newLine{ g'(y) } { \frac{y}{1+y^2} } { 3.3 }
+                    \newLine{ g(y) } { \int \frac{y}{1+y^2}dy } { 3.3 }
+                    \newLine{ g(y) } { \frac{1}{2}ln\p{1+y^2} } { 3.4 }
+                \\
+                \newLine{ F(x,y) } { \frac{1}{2}x^2 + xtan^{-1}y + \frac{1}{2}ln\p{1+y^2} } {4}
+                \finalAnswer{ \frac{1}{2}x^2 + xtan^{-1}y + \frac{1}{2}ln\p{1+y^2} }{ C }
+            \end{align*}
+        
+            \newProblem{ n }{ 2xydx + \p{y^2 - x^2}dy = 0}
+                \begin{align*}
+                    \homogenea
+                    \\
+                    \newLine{ (2x^2 u)dx + (x^2y^2 - x^2)\p{udx+xdu} } { 0 } {1}
+                    \newLine{ x^2 \p{u+u^3}dx } { -x^3 \p{u^2-1} du } { 2 }
+                    \newLine{ -\int \frac{dx}{x} } { \int \frac{u^2-1}{u(1+u^2)} du } { 3 }
+                    \\
+                        \newLine{ \int \frac{u^2-1}{u(1+u^2)} du } { -\int \frac{ 1 }{ u } du + 2\int \frac{1}{1+u^2} du } { 4.1 }
+                        \newLine{ \int \frac{u^2-1}{u(1+u^2)} du } { -ln(u) + 2tan^{-1}u + c} { 4.2 }
+                    \\
+                    \newLine{ -ln(x) } { -ln(u) + 2tan^{-1}u + c } { 5 }
+                    \newLine{ x^{-1} } { Cu^{-1}\e{2tan^{-1}u} } { 6 }
+                    \finalAnswer{ x^{-1} } { C\p{\frac{y}{x}}^{-1}\e{2tan^{-1}\p{\frac{y}{x}}} }
+                \end{align*}
+
+            \newProblem{o}{ \p{cosxcosy-cotx}dx - \p{senxseny}dy = 0 }
+                \begin{align*}
+                    \newLine{ \p{cosxcosy-cotx}dx + \p{-senxseny}dy } { 0 } { 1 }
+                    \newLine{ \pD{M}{y} = -cosxseny }{ \pD{N}{x} = -cosxseny }{ 2 }
+                    \\
+                    \newLine{ F(x,y) } { \int \p{cosxcosy-cotx}dx + g(y) } { 3.1 }
+                    \newLine{ F(x,y) } { senxcosy - ln(senx) + g(y) } { 3.2 }
+                    \\
+                    \newLine{ \pD{F}{y} } { N(x,y) } { 4.1 }
+                    \newLine{ -senxseny + g'(y) } { senxseny } { 4.2 }
+                    \newLine{ g'(y) } { 0 } { 4.3 }
+                    \newLine{ g(y) } { C } { 4.4 }
+                    \\
+                    \newLine{ F(x,y) } { senxcosy - ln(senx) + C } { 5 }
+                    \finalAnswer{ senxcosy - ln(senx) }{ C }
+                \end{align*}
+
+            \newProblem{p}{ \p{2y^2 + 3x}dx + 2xydy = 0 }
+                \begin{align*}
+                    \notEqual{ \pD{M}{y} = 4y } { \pD{N}{x} = 2y } { 1 }
+                    \\
+                    \newLine{ \mu (x) }{ \e{ \int \frac{4y-2y}{2xy} dx} }{ 2.1 }
+                    \newLine{ \mu (x) } { \e{ \int \frac{2y}{2xy} dx} } { 2.2 }
+                    \newLine{ \mu(x) } { \e{ \int \frac{1}{x} dx} } { 2.3 }
+                    \newLine{ \mu(x) } { \e{ ln(x) } } { 2.4 }
+                    \\
+                        \newLine{ \p{2y^2 x + 3x^2}dx + \p{2x^2y}dy } { 0 } { 3 }
+                    \\
+                        \newLine{ F(x,y) } { \int \p{2y^2 x + 3x^2}dx + g(y) } { 4.1 }
+                        \newLine{ F(x,y) } { y^2 x^2 + x^3 + g(y) } { 4.2 }
+                    \\
+                        \newLine{ \pD{F}{y} } { N(x,y) } { 5.1 }
+                        \newLine{ 2x y^2 + g'(y) } { 2x y^2 } { 5.2 }
+                        \newLine{ g'(y) } { 0 } { 5.3 }
+                        \newLine{ g(y) } { C } { 5.4 }
+                    \\
+                    \newLine{ F(x,y) } { y^2 x^2 + x^3 + C } { 6 }
+                    \finalAnswer{ y^2 x^2 + x^3 }{ C }
+                \end{align*}
+
+        \textbf{2.Resuelva las siguientes aplicaciones:} \\
+        \begin{itemize}
+            \item Una medicina se inyecta en el torrente sanguíneo de un paciente a un flujo constante de $ r\frac{g}{s} $.
+             Al mismo tiempo, esa medicina desaparece con una razón proporcional a la cantidad x(t) presente en cualquier momento t.
+             Formule la ecuación diferencial que describa la cantidad x(t) y resuélvala.
+
+             \begin{align*}
+                 \newLine{ \frac{dx}{dt} }{ r-kx }{ 1 }
+                 \newLine{ \dot{x} + kx }{ r }{ 2 }
+                 \\
+                 \newLine{ \mu(x) } { \e{\int k dt} } { 3.1 }
+                 \newLine{ \mu(x) } { \e{kt} } { 3.2 }
+                 \\
+                 \newLine{ \dot{x}\e{kt} + kx\e{kt} } { r\e{kt} } { 4 }
+                 \newLine{ \frac{d}{dt} \brackets{ x \e{kt} } } { r\e{kt} } { 5 }
+                 \newLine{ x \e{kt} } { \int r\e{kt} dt } { 6 }
+                 \newLine{ x \e{kt} } { \frac{r}{k} \e{kt} + c} { 7 }
+                 \finalAnswer{ x(t) } { \frac{r}{k} + \frac{c}{\e{kt}} }
+             \end{align*}
+
+            \item Un tanque tiene 500 gal de agua pura y le entra salmuera con 2 lb de sal por galón a un flujo de 5 gal/min. 
+            El tanque está bien mezclado, y sale de él el mismo flujo de solución. 
+            Calcule la cantidad A(t) de libras de sal que hay en el tanque en cualquier momento t.
+
+            \begin{align*}
+                \newLine{R_in = (2)(5) }{ 10 }{1.1}
+                \newLine{ R_out = (\frac{A}{500})(5) }{ \frac{A}{100} }{1.2}
+                \newLine{\dot{A}} {10-\frac{A}{100}} {2}
+                \newLine{ \dot{A} + \frac{1}{100}A } { 10 } { 3 }
+                \\
+                \newLine{ \mu (x) }{ \e{\int \frac{1}{100} dt} }{ 4.1 }
+                \newLine{ \mu(x) } { \e{\frac{t}{100} } } {4.2}
+                \\
+                \newLine{ \frac{d}{dt}\brackets{ A \e{\frac{t}{100}} } } { 10\e{\frac{t}{100}} } { 5 }
+                \newLine{ A \e{\frac{t}{100}} } { \int 100\e{\frac{t}{100}} dt } { 6 }
+                \newLine{ A \e{\frac{t}{100}} } { \e{\frac{t}{100}} + c } { 7 }
+                \finalAnswer{A(t)}{ 1+ \frac{c}{\e{\frac{t}{100}}} }
+            \end{align*}
+
+            \item $\boldsymbol{q(t) e i(t)}$
+            \begin{align*}
+                \newLine{ Ri(t) + \frac{1}{c}q} { E(t) } { 1 }
+                \newLine{ 200\dot{q} + \frac{1}{10^{-4}}q } { 100 } { 2 }
+                \newLine{ \dot{q} + 50q } { \frac{1}{2} } { 3 }
+                \\
+                \newLine{ \mu (x) }{ \e{\int 50 dt} }{ 4.1 }
+                \newLine{ \mu(x) } { \e{50t} } {4.2}
+                \\
+                \newLine{ \frac{d}{dt}\brackets{ A \e{50t} } } { \frac{1}{2}\e{50t} } { 5 }
+                \newLine{ q \e{50t} } { \int \frac{1}{2}\e{50t} dt } { 6 }
+                \newLine{ q \e{50t} } { \frac{1}{100}\e{50t} + c } { 7 }
+                \finalAnswer{q(t)}{ \frac{1}{100} - \frac{1}{100}\frac{c}{\e{50t}} }
+            \end{align*}
+        \end{itemize}
     \end{flushleft}
 
 \end{document}
